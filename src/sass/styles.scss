@@ -3,6 +3,7 @@ body {
 	margin: 0px 50px;
 	color: #ffffff;
 	line-height: 18px;
+	font-family: Tahoma, sans-serif;
 }
 
 a {
@@ -56,6 +57,7 @@ a {
 
 	& .index-home {
 		border: solid 10px #076766;
+		font-size: 12px;
 	}
 
 	& .horizont-line {
@@ -72,6 +74,15 @@ a {
 		& h2 {
 			font-size: 18px;
 		}
+
+		& .share-wrap {
+		flex-direction: row;
+		}
+
+		& a {
+			display: inline-flex;
+		}
+		
 	}
 }
 
