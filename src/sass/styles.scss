@@ -11,14 +11,11 @@ a {
 }
 
 .header-wrap {
-	background: #03292A;
-}
-
-.header-wrap {
 	position: relative;
 	height: 100px;
-	overflow: hidden;
 	margin: 10px 0px;
+	background: #03292A;
+	font-size: 14px;
 
 	& .logo-nav {
 		position: absolute;
@@ -32,6 +29,41 @@ a {
 	}
 	
 	& .main-navigation {
+		position: absolute;
+		bottom: 0;
+		left: 10px;		
+		& [class^=nav-item] a{
+			padding: 0;
+		}
+
+		a:hover {
+			color: #ffffff;
+		}
+
+		& .nav-item {
+			font-weight: bold;
+			margin-right: 2px;
+			background: #076766;
+			padding: 10px 30px;
+		}
+	}
+
+	& .dropdown-menu {
+		border: none;
+		border-radius: 0;
+		margin: 0;
+		font-size: 12px;
+		line-height: 12px;
+		background: #076766;
+		padding: 4px;
+		a {
+			color: #fff;
+			margin: 4px 16px 4px 4px;
+
+			&:hover {
+				background: none;
+			}
+		}
 	}
 }
 
@@ -72,15 +104,42 @@ a {
 		border: solid 10px #02544E;
 
 		& h2 {
-			font-size: 18px;
+			font-size: 16px;
+			text-transform: uppercase;
+			margin-top: 14px;
 		}
 
-		& .share-wrap {
-		flex-direction: row;
+		& .share-wrap {			
+			flex-direction: row;
+
+			& a {
+				margin-right: 18px;
+				display: inline-flex;
+
+				&:hover {
+					color: #ffffff;
+				}
+			}
 		}
 
-		& a {
-			display: inline-flex;
+		.categories {
+			font-size: 16px;
+			line-height: 21px;
+
+			ul {
+				list-style: none;
+				margin-top: 10px;
+				padding: 0px;
+
+				a {
+					text-decoration: underline;
+
+				}
+			}
+		}
+
+		#carousel-example-generic {
+			margin-top: 10px;
 		}
 		
 	}
@@ -90,7 +149,9 @@ a {
 	background: #076766;
 	position: relative;
 	text-align: left;
-	padding: 5px;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 10px;
 	margin: 10px 0px;
 
 	& .copyright {
@@ -101,11 +162,10 @@ a {
 		position: absolute;
 		display: inline;
 		right: 10px;
-		font-size: 20px;
-
+		
 		& a {
 			margin: 5px;
-			padding: 10px 0px;
+			text-decoration: underline;
 		}
 	}
 }
