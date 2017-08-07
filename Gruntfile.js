@@ -149,9 +149,9 @@ module.exports = function (grunt) {
         'clean:dev',
         'copy:dev',
         'sass:dev',
-        'processhtml:dev',
         'htmlmin:dev',
         'connect',
+        'processhtml:dev',
         'watch']);
 
     grunt.registerTask('dist', [

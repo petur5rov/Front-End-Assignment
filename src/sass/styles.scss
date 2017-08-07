@@ -1,5 +1,5 @@
 body {
-	background: #ffffff; 
+	background: #ffffff;
 	margin: 0px 50px;
 	color: #ffffff;
 	line-height: 18px;
@@ -12,7 +12,7 @@ a {
 
 .header-wrap {
 	position: relative;
-	height: 100px;
+	padding-top: 55px;
 	margin: 10px 0px;
 	background: #03292A;
 	font-size: 14px;
@@ -27,11 +27,11 @@ a {
 			width: 100%;
 		}
 	}
-	
+
 	& .main-navigation {
-		position: absolute;
+		position: relative;
 		bottom: 0;
-		left: 10px;		
+		left: 10px;
 		& [class^=nav-item] a{
 			padding: 0;
 		}
@@ -78,7 +78,7 @@ a {
 	}
 }
 
-.main-wrap { 
+.main-wrap {
 	background: #1E3A3B;
 	display: flex;
 	padding: 0px;
@@ -112,7 +112,7 @@ a {
 			margin-top: 14px;
 		}
 
-		& .share-wrap {			
+		& .share-wrap {
 			flex-direction: row;
 
 			& a {
@@ -146,7 +146,7 @@ a {
 
 			li {
 				max-width: 3px;
-				border-radius: 50%;				
+				border-radius: 50%;
 			}
 
 			& .carousel-indicators {
@@ -157,7 +157,7 @@ a {
 				width: 100%;
 			}
 		}
-		
+
 	}
 }
 
@@ -178,7 +178,7 @@ a {
 		position: absolute;
 		display: inline;
 		right: 10px;
-		
+
 		& a {
 			margin: 5px;
 			text-decoration: underline;
